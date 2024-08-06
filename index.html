@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Theme Website</title>
+    <link id="themeStylesheet" rel="stylesheet" href="theme1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <script>
+      function switchTheme(theme) {
+        document.getElementById("themeStylesheet").href = theme + ".css";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Multi-Theme Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#theme1" onclick="switchTheme('theme1')">Theme 1</a></li>
+          <li><a href="#theme2" onclick="switchTheme('theme2')">Theme 2</a></li>
+          <li><a href="#theme3" onclick="switchTheme('theme3')">Theme 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Hero Banner</h2>
+        <p>Experience the magic of dynamic themes.</p>
+      </section>
+      <section class="cards">
+        <h2>Card Layout</h2>
+        <div class="card">
+          <img src="image.jpg" alt="Card Image 1" />
+          <div class="card-content">
+            <h3>Card 1</h3>
+            <p>This is the description for card 1.</p>
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <h2>Contact Form</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 Multi-Theme Website</p>
+      <div class="social-icons">
+        <a href="#" title="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
